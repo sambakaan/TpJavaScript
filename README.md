@@ -1,2 +1,0 @@
-# TpJavaScript
-Formation Découverte javaScript
