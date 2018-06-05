@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tp js Avance avec Jquery</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="js/jquery.localScroll.js" type="text/javascript"></script>
+	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$.localScroll();
+			$('.block1, .block2').hide()
+			//selectinner un element avec son id en plus ecouté l'evenement click
+			$('#lien1').click(function(){
+				//Selectionner un element avec sa classe
+				$('.block1').slideToggle('1000')
+				//Ajout d'un element
+				$('.block1 p').prepend("BIENVENUE KOS /")
+			})
+
+			$('#lien2').click(function(){
+				$('.block2').slideToggle('1000')
+			})
+		})
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		
+	</div>	
+</body>
+</html>
